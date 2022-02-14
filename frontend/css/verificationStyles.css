@@ -1,0 +1,17 @@
+body{
+  background-color:#f5f5f5;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1{
+  font-weight: bold;
+}
+
+.main{
+  margin: 14% auto 0 auto;
+}
+
+#navbarVerification{
+  padding: 2% 2% 3% 2%;
+}

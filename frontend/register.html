@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset=UTF-8>
+
+  <title>Register</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- CSS stylesheet -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/signUpStyles.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/5f0a88540f.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Javascript Scripts -->
+  <script src="script/register.js"></script>
+</head>
+
+<body>
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navbarRegister">
+      <a class="navbar-brand" href="#">Selamat Datang di Aplikasi Survei Online</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Navbar text with an inline element
+        </span>
+      </div> -->
+    </nav>
+  </section>
+  <section id="bodyRegister">
+    <div class="container">
+      <h1 style="margin-bottom:2%">Sign Up</h1>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <!-- <form> -->
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control registerInput" id="email" aria-describedby="emailHelp" placeholder="Masukkan email anda">
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control registerInput" id="password" placeholder="Masukkan password anda">
+            <small style="margin-left:1%">*password harus berkisar antara 6-16 karakter dan memiliki minimal satu huruf besar dan satu simbol khusus</small>
+          </div>
+          <div class="form-group">
+            <label>Verify Password</label>
+            <input type="password" class="form-control registerInput" id="verifyPassword" placeholder="Verifikasi ulang password anda">
+          </div>
+          <div class="form-group">
+            <label>Company</label>
+            <input type="text" class="form-control registerInput" id="company" placeholder="Masukkan perusahaan anda">
+          </div>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control registerInput" id="name" placeholder="Masukkan nama">
+          </div>
+          <!-- <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div> -->
+          <button class="btn btn-primary" onclick="signUp()">Sign Up</button>
+          <!-- </form> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Navs done -->
+
+</body>
+
+</html>
